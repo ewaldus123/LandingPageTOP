@@ -1,0 +1,63 @@
+#Header {
+    display: flex;
+}
+
+#Headerlinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+#info {
+    display:flex;
+    flex-direction: column;
+}
+
+#facts{
+    display:flex;
+}
+
+h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.subtitle
+#quotetext {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+}
+
+#quotetext {
+    font-style: italic;
+}
+
+.text,
+#Headerlinks {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 8px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+
+
+#header, 
+#subheader, 
+#footer {
+    background-color: #1f2937;
+}
+
+img {
+    width: 200px;
+    height: 1;
+}
