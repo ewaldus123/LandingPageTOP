@@ -1,42 +1,79 @@
-#Header {
+
+
+#header,
+#subheader,
+#action {
     display: flex;
+    flex: 1 0 0;
+}
+
+#subheader,
+#info,
+#quote,
+#action {
+    padding: 50px;
+}
+
+#actionfulltxt {
+    padding-right: 50px;
 }
 
 #Headerlinks {
     display: flex;
-    justify-content: space-between;
+    flex: 1 0 0;
+    justify-content: flex-end
+}
+
+#headerimg {
+    display: flex;
+    flex: 1 0 0 ;
+    height: 100px;
+    width: 200px;
+}
+
+#action {
+    background-color: lightseagreen;
+    margin: 100px;
+    border-radius: 25px;
 }
 
 #info {
     display:flex;
     flex-direction: column;
+    flex: 1 0 0;
 }
 
 #facts{
     display:flex;
+    text-align: center;
+    flex: 1 0 0;
 }
 
-h1 {
+h1,
+#actiontitle {
     color: #f9faf8;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: bolder;
 }
 
-.subtitle
+.subtitle,
 #quotetext {
     font-size: 36px;
     font-weight: bold;
     color: #1F2937;
+    text-align: center;
 }
 
 #quotetext {
     font-style: italic;
+    padding: 20px;
 }
 
 .text,
 #Headerlinks {
     color: #E5E7EB;
     font-size: 18px;
+    list-style-type: none;
 }
 
 button {
@@ -45,11 +82,9 @@ button {
     border-radius: 8px;
 }
 
-.quote {
+#quote {
     background-color: #E5E7EB;
 }
-
-
 
 #header, 
 #subheader, 
@@ -59,5 +94,6 @@ button {
 
 img {
     width: 200px;
-    height: 1;
+    height: 200px;
+    margin: 20px;
 }
