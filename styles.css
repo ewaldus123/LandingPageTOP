@@ -1,99 +1,206 @@
+* {
+    box-sizing: border-box;
+}
 
-
+/* This is flexbox specific*/
 #header,
+#headerlinks,
 #subheader,
+#facts,
 #action {
     display: flex;
-    flex: 1 0 0;
+    flex: 1;
 }
 
-#subheader,
-#info,
-#quote,
+#header {
+    justify-content: space-between;
+}
+
+#action,
+#subheader {
+    justify-content: space-between;
+    align-items: center;
+}
+/* This is flexbox specific*/
+
+/* This is box and padding specific*/
+
+#subheader {
+    padding: 80px;
+}
+
+#subheadertxt {
+    width: 300px;
+}
+
+#subheadertxt2 {
+    margin-bottom: 20px;
+}
+
+#quote{
+    padding: 80px;
+}
+
+#facttxt {
+    margin: 100px;
+}
+
 #action {
-    padding: 50px;
+    margin: 80px;
+    padding: 20px;
+    height: 150px;
+    width: 500x;
+    border-radius: 10px;
 }
 
-#actionfulltxt {
-    padding-right: 50px;
+#actiontxt {
+    width: 400px;
 }
 
-#Headerlinks {
-    display: flex;
-    flex: 1 0 0;
-    justify-content: flex-end
+/* This is box and padding specific*/
+
+/* This is image specific*/
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.picfact {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
 }
 
 #headerimg {
-    display: flex;
-    flex: 1 0 0 ;
-    height: 100px;
-    width: 200px;
+    width: 125px;
+    height: 1;
+    border-radius: 5px;
 }
 
-#action {
-    background-color: lightseagreen;
-    margin: 100px;
-    border-radius: 25px;
+#subheaderimg {
+    width: 250px;
+    height: 150px;
+    border-radius: 15px;
+}
+/* This is image specific*/
+
+/* This is list specific*/
+ol,
+ul,
+li {
+    padding-left: 0;
+    list-style: none;
+    list-style-position: inside;
+    padding: 5px;
+}
+/* This is list specific*/
+
+/* This is font and colour specific*/
+.txt1 {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #E3EDFF;
 }
 
-#info {
-    display:flex;
-    flex-direction: column;
-    flex: 1 0 0;
-}
-
-#facts{
-    display:flex;
-    text-align: center;
-    flex: 1 0 0;
-}
-
-h1,
-#actiontitle {
-    color: #f9faf8;
-    font-size: 32px;
+#subheadertitle {
     font-weight: bolder;
+    font-size: 48px;
+    color: white;
 }
 
-.subtitle,
-#quotetext {
-    font-size: 36px;
+#subheadertxt2 {
+    font-size: 20px;
+    color: white;
+}
+
+#infotitle {
     font-weight: bold;
-    color: #1F2937;
-    text-align: center;
+    font-size: 36px;
+    color: #1A2061;
 }
 
-#quotetext {
+.facttxt {
+    font-size: 16px;
+}
+
+#quotetxt {
+    font-size: 36px;
     font-style: italic;
-    padding: 20px;
+    font-weight: light;
+    color: #1F2937;
 }
 
-.text,
-#Headerlinks {
-    color: #E5E7EB;
+#quotename {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #1A2061;
+}
+
+#actiontitle {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+#actionfulltxt {
     font-size: 18px;
-    list-style-type: none;
+    color: white;
 }
 
-button {
-    background-color: #3882F6;
-    color: #E5E7EB;
-    border-radius: 8px;
+/* This is font and colour specific*/
+
+/* This is button specific*/
+
+#subbutton,
+#actionbutton {
+    background-color: #2669D8;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+#subbutton {
+    font-weight: bolder;
+    border: none;
+}
+
+#actionbutton {
+    border-color: white;
+}
+/* This is button specific*/
+
+/* This is background-color specific*/
+#header,
+#subheader,
+.footer {
+    background-color: #1F2937;
 }
 
 #quote {
     background-color: #E5E7EB;
 }
 
-#header, 
-#subheader, 
-#footer {
-    background-color: #1f2937;
+#action {
+    background-color: #2669D8;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
+/* This is background-color specific*/
+
+
+/* This is alignment specific*/
+.facttxt,
+.footer,
+#infotitle {
+    text-align: center;
 }
+
+#quotename {
+    text-align: right;
+}
+
+.picfact {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* This is alignment specific*/
